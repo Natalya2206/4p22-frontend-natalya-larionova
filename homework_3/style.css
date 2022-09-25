@@ -1,0 +1,45 @@
+body {
+    background: linear-gradient(45deg,  #EECFBA, #C5DDE8) fixed;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(20, 138, 9);
+}
+
+.book {
+    margin-top: 10%;
+}
+
+.book h3 {
+    margin-left: 35%;
+}
+
+.book p {
+    margin-left: 30%;
+}
+.book a {
+    margin-left: 30%
+}
+
+.table {
+    margin-top: 5%;
+}
+
+.table h3 {
+    margin-left: 40%;
+}
+
+.table a {
+    margin-left: 35%;
+}
+
+.video h3{
+    margin-top: 5%;
+    margin-left: 40%;
+}
+
+.video a {
+    margin-top: 5%;
+    margin-left: 45%;
+}
