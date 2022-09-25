@@ -1,0 +1,30 @@
+body {
+    background-color: rgba(50, 50, 51, 0.4);
+}
+
+table {
+    border: 1px solid #333;
+    margin: auto;
+}
+
+td {
+    padding: 10px;
+    border: 1px solid #333;
+}
+
+tr {
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.home {
+    margin-left: 45%;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
