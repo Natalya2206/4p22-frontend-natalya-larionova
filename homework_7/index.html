@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <title>Form</title>
+</head>
+<body>
+    <main>
+        <form class="form">
+             <div class="form__header">
+                 <h2>Вход</h2>
+             </div>
+             <div class="form__input">
+                 <div class="form-input__info">
+                     <label class="form-input__info-email" for="email">Email</label>
+                     <input class="input" id="email" name="email" type="email" placeholder="Введите email">
+                 </div>
+                 <div class="form-input__info">
+                     <label class="form-input__info-password" for="password">Пароль</label>
+                     <input class="input" id="password" name="password" type="password" placeholder="Введите пароль">
+                 </div>
+                 <div class="form__input-checkbox">
+                     <input id="checkbox" type="checkbox">
+                 <div class="form__input-checkbox-for-label"></div>
+                     <label class="form__input-checkbox-label" for="checkbox">Я согласен получать обновления на почту</label> 
+                 </div>
+                 <button class="form__button">Войти</button>
+             </div>
+         </form>
+    </main>
+</body>
+</html>
