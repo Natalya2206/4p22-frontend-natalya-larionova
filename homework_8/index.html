@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <main class="content">
+        <div class="content__header">
+            <h1>Калькулятор</h1>
+        </div>
+        <div class="content__input">
+            <input aria-label="number" name="number" class="input__first-number" id="first-number" type="text" placeholder="Введите первое число">
+            <input aria-label="number" name="number" class="input__symbol" id="symbol" type="text" placeholder="(+, -, /, *)">
+            <input aria-label="symbol" name="symbol" class="input__second-number" id="second-number" type="text" placeholder="Введите второе число">
+        </div>
+        <div class="input__result" id="result"></div>
+        <div>
+            <button class="content__button" id="button">Рассчитать</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
