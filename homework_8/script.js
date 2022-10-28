@@ -29,7 +29,7 @@ button.addEventListener('click', (event) => {
         result = 'Первое число не указано';
     } else if (secondNumber === '') {
         result = 'Второе число не указано';
-    } else if (isNaN(firstNumber) === true || isNaN(secondNumber) === true) {
+    } else if (isNaN(firstNumber) || isNaN(secondNumber)) {
         result = 'Некорректный ввод чисел';
     } else if (result === Infinity) {
         result = 'Операция некорректна';
