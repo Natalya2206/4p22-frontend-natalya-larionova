@@ -34,9 +34,8 @@ button.addEventListener('click', (event) => {
     } else if (result === Infinity) {
         result = 'Операция некорректна';
     } else {
-        console.log('Всё верно');
+        console.log(result);
     }
 
     document.getElementById('result').innerHTML = result;
-    console.log(result);
 });    
