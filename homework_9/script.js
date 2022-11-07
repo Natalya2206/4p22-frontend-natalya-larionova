@@ -23,12 +23,12 @@ function fibonacci() {
     };
 }
 
-const fib = fibonacci();
+const functionFibonacci = fibonacci();
 
-console.log(fib());
-console.log(fib());
-console.log(fib());
-console.log(fib());
-console.log(fib());
-console.log(fib());
-console.log(fib());
+console.log(functionFibonacci());
+console.log(functionFibonacci());
+console.log(functionFibonacci());
+console.log(functionFibonacci());
+console.log(functionFibonacci());
+console.log(functionFibonacci());
+console.log(functionFibonacci());
