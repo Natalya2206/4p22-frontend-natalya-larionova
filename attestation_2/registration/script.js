@@ -1,19 +1,21 @@
 'use strict';
+
+const emailError = document.getElementById('emailError');
 const emailInput = document.querySelector('input[name=email]');
+const passwordError = document.getElementById('passwordError');
 const passwordInput = document.querySelector('input[name=password]');
+const confirmPasswordError = document.getElementById('confirmPasswordError');
 const confirmPasswordInput = document.querySelector('input[name=confirm_password]');
 const gender = document.querySelectorAll('input[name="gender"]');
+
 const button = document.getElementById('button');
 
 button.addEventListener('click', (event) => {
     event.preventDefault();
 
     const email = document.getElementById('email').value;
-    const emailError = document.getElementById('emailError');
     const password = document.getElementById('password').value;
-    const passwordError = document.getElementById('passwordError');
     const confirmPassword = document.getElementById('confirm_password').value;
-    const confirmPasswordError = document.getElementById('confirmPasswordError');
     const textarea = document.getElementById('textarea').value;
     const checkbox = document.getElementById('checkbox').checked;
 
@@ -60,7 +62,7 @@ button.addEventListener('click', (event) => {
         }
     };
 
-    if(validateEmail(email) === true && password.length >= 8 && password === confirmPassword) {
+    if(validateEmail(email) && password.length >= 8 && password === confirmPassword) {
         formSubmissions ();
     };
     
@@ -72,6 +74,6 @@ button.addEventListener('click', (event) => {
         users.checkbox = checkbox;
         users.gender = genderInput;
 
-        return console.log(users)
-    }
+        console.log(users);
+    };
 });

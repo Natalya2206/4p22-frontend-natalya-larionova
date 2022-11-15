@@ -128,22 +128,28 @@ h2 {
     color: #787878;
 }
 
-.form__input-info-email-error {
+#emailError {
     position: absolute;
-    top: 12%;
+    top: 13%;
     right: 8%;
     color: #EE2424;
     font-family: 'Roboto';
     font-weight: 700;
+    height: calc(16 / 1440 * 100vw);
+    font-size: calc(16 / 1440 * 100vw);
+    line-height: calc(16 / 1440 * 100vw);
 }
 
-.form__input-info-password-error {
+#passwordError {
     position: absolute;
     top: 23%;
     right: 8%;
     color: #EE2424;
     font-family: 'Roboto';
     font-weight: 700;
+    height: calc(16 / 1440 * 100vw);
+    font-size: calc(16 / 1440 * 100vw);
+    line-height: calc(16 / 1440 * 100vw);
 }
 
 .form__input-info-confirm_password {
@@ -156,13 +162,16 @@ h2 {
     color: #787878;
 }
 
-.form__input-info-confirm_password-error {
+#confirmPasswordError {
     position: absolute;
     top: 33%;
     right: 8%;
     color: #EE2424;
     font-family: 'Roboto';
     font-weight: 700;
+    height: calc(16 / 1440 * 100vw);
+    font-size: calc(16 / 1440 * 100vw);
+    line-height: calc(16 / 1440 * 100vw);
 }
 
 .form__input-radio {
@@ -428,11 +437,34 @@ h2 {
 
     .form__input-info-email, .form__input-info-password {
         font-size: calc(16 / 768 * 100vw);
+        width: calc(70 / 768 * 100vw);
+
     }
-            
+
+    #emailError {
+        top: 10.5%;
+        height: calc(14 / 768 * 100vw);
+        font-size: calc(14 / 768 * 100vw);
+        line-height: calc(14 / 768 * 100vw);
+    }
+
+    #passwordError {
+        top: 19.5%;
+        height: calc(14 / 768 * 100vw);
+        font-size: calc(14 / 768 * 100vw);
+        line-height: calc(14 / 768 * 100vw);
+    }
+
     .form__input-info-confirm_password {
-         width: calc(182 / 768 * 100vw);
         font-size: calc(16 / 768 * 100vw);
+        width: calc(195/ 768 * 100vw);
+    }
+
+    #confirmPasswordError {
+        top: 29%;
+        height: calc(14 / 768 * 100vw);
+        font-size: calc(14 / 768 * 100vw);
+        line-height: calc(14 / 768 * 100vw);
     }
 
     .form__input-radio {
