@@ -1,0 +1,217 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+header {
+    font-family: 'Inter';
+    display: flex;
+    width: calc(1440 / 1440 * 100vw);
+    height: calc(80 / 1440 * 100vw);
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.header__logo img{
+    width: calc(222 / 1440 * 100vw);
+    height: calc(50 / 1440 * 100vw);
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+.header__title {
+    margin-left: 5%;
+    margin-top: -0.10%;
+}
+
+h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: calc(36 / 1440 * 100vw);
+    line-height: calc(44 / 1440 * 100vw);
+    color: #787878;
+}
+
+.header__links {
+    display: inline-flex;
+    align-self: center;
+    margin-left: 45%;
+}
+
+a {
+    text-decoration: none;
+}
+  
+.header__links-registration {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: calc(24 / 1440 * 100vw);
+    line-height: calc(29 / 1440 * 100vw);
+    color: #787878;
+}
+  
+.header__links-entry {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: calc(24 / 1440 * 100vw);
+    line-height: calc(29 / 1440 * 100vw);
+    color: #1A226B;
+    margin-left: 10%;
+}
+
+.form {
+    position: relative;
+    width: calc(600 / 1440 * 100vw);
+    height: calc(383 / 1440 * 100vw);
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.25);
+    margin-top: 5%;
+    left: 30%;
+    padding: 3px 3px 3px 3px;
+}
+
+.form__header {
+    margin-left: 40%;
+    margin-top: 6%;
+    width: calc(115 / 1440 * 100vw);
+    height: calc(60 / 1440 * 100vw);
+}
+    
+h2 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: calc(50 / 1440 * 100vw);
+    line-height: calc(50 / 1440 * 100vw);
+    color: #787878;
+    margin-top: 20%;
+}
+
+.form-input__info-email, .form-input__info-password {
+    height: calc(16 / 1440 * 100vw);
+    width: calc(40 / 1440 * 100vw);
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: calc(16 / 1440 * 100vw);
+    line-height: calc(16 / 1440 * 100vw);
+    color: #787878;
+    margin-left: 1%;
+    margin-bottom: 1%;
+}
+
+.form-input__info {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3%;
+    margin-left: 7%;
+    margin-top: 2%;
+}
+     
+.input {
+    width: calc(510 / 1440 * 100vw);
+    height: calc(49 / 1440 * 100vw);
+    background: #FFFFFF;
+    border: 2px solid #787878;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: calc(28 / 1440 * 100vw);
+    line-height: calc(36 / 1440 * 100vw);
+    color: #787878;
+    padding: 10px;
+}
+    
+input::placeholder {
+    color: #CCCCCC;
+    padding: 5px;
+}    
+    
+.form__button {
+    width: calc(180 / 1440 * 100vw);
+    height: calc(52 / 1440 * 100vw);
+    position: absolute;
+    top: 80%;
+    left: 35%;
+    border: 0;
+    align-items: center;
+    color: #FFFFFF;
+    background: #1A226B;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: calc(24 / 1440 * 100vw);
+    line-height: calc(16 / 1440 * 100vw);    
+}
+    
+@media screen and (max-width: 768px) {
+    .form {
+        position: relative;
+        width: calc(600 / 768 * 100vw);
+        height: calc(383 / 768 * 100vw);
+        margin-top: 10%;
+        left: 13%;
+    }
+
+    .form__header {
+        margin-left: 40%;
+        margin-top: 3%;
+        justify-content: center;
+        width: calc(115 / 768 * 100vw);
+        height: calc(50 / 768 * 100vw);
+    }
+    
+    h2 {
+        font-size: calc(50 / 768 * 100vw);
+        line-height: calc(50 / 768 * 100vw);
+        color: #787878;
+    }
+
+    .form-input__info {
+        margin-bottom: 4%;
+        margin-left: 7%;
+        margin-top: 2%;
+    }
+
+    .form-input__info-email {
+        height: calc(16 / 768 * 100vw);
+        font-size: calc(16 / 768 * 100vw);
+        line-height: calc(16 / 768 * 100vw);
+        width: calc(60 / 768 * 100vw);
+        margin-left: 1%;
+    }
+           
+    .input {
+        width: calc(509 / 768 * 100vw);
+        height: calc(49 / 768 * 100vw);
+        font-size: calc(28 / 768 * 100vw);
+        line-height: calc(36 / 768 * 100vw);
+    }
+
+    .form-input__info-password {
+        height: calc(16 / 768 * 100vw);
+        width: calc(56 / 768 * 100vw);
+        font-size: calc(16 / 768 * 100vw);
+        line-height: calc(16 / 768 * 100vw);
+        margin-top: -2%;
+        margin-bottom: 1%;
+        margin-left: 1%;
+        font-weight: 700;
+    }
+
+    .form__button {
+        width: calc(180 / 768 * 100vw);
+        height: calc(52 / 768 * 100vw);
+        top: 75%;
+        left: 37%;
+        font-size: calc(24 / 768 * 100vw);
+        line-height: calc(16 / 768 * 100vw);
+    }       
+    
+}
